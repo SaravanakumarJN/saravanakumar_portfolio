@@ -4,7 +4,9 @@ import { BiLinkExternal } from "react-icons/bi";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const ProjectCard = ({ item: { image, about, links, title, tech_stack } }) => {
+const ProjectCard = ({
+  item: { image, about, links, title, tech_stack, badge },
+}) => {
   let [git, demo] = links;
   tech_stack = tech_stack.join(" | ");
   let interval = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
@@ -20,6 +22,12 @@ const ProjectCard = ({ item: { image, about, links, title, tech_stack } }) => {
 
   return (
     <div className={styles.card}>
+      {badge ? (
+        <>
+          <div className={styles.card_badge_bottom}></div>
+          <div className={styles.card_badge_top}>Side project{badge}</div>
+        </>
+      ) : null}
       <div className={styles.title}>{title}</div>
       <div className={styles.image}>
         <Carousel

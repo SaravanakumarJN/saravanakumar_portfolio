@@ -2,6 +2,49 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
+  return (
+    <>
+      <div
+        className={styles.nav_links}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("about");
+        }}
+      >
+        About
+      </div>
+      <div
+        className={styles.nav_links}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("experience");
+        }}
+      >
+        Experience
+      </div>
+      <div
+        className={styles.nav_links}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("skills");
+        }}
+      >
+        Skills
+      </div>
+      <div
+        className={styles.nav_links}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("projects");
+        }}
+      >
+        Projects
+      </div>
+    </>
+  );
+};
+
 const Navbar = ({ handleSectionScroll }) => {
   const [verticalOpen, setVerticalOpen] = React.useState(false);
 
@@ -26,42 +69,10 @@ const Navbar = ({ handleSectionScroll }) => {
         </div>
         <div className={styles.grow}></div>
         <div className={styles.horizontal_nav}>
-          <div
-            className={styles.nav_links}
-            onClick={() => {
-              setVerticalOpen(false);
-              handleSectionScroll("about");
-            }}
-          >
-            About
-          </div>
-          <div
-            className={styles.nav_links}
-            onClick={() => {
-              setVerticalOpen(false);
-              handleSectionScroll("experience");
-            }}
-          >
-            Experience
-          </div>
-          <div
-            className={styles.nav_links}
-            onClick={() => {
-              setVerticalOpen(false);
-              handleSectionScroll("skills");
-            }}
-          >
-            Skills
-          </div>
-          <div
-            className={styles.nav_links}
-            onClick={() => {
-              setVerticalOpen(false);
-              handleSectionScroll("projects");
-            }}
-          >
-            Projects
-          </div>
+          <NavLinks
+            setVerticalOpen={setVerticalOpen}
+            handleSectionScroll={handleSectionScroll}
+          />
         </div>
         <div
           className={styles.vertical_nav_icon}
@@ -82,42 +93,10 @@ const Navbar = ({ handleSectionScroll }) => {
           height: verticalOpen ? "290px" : "0px",
         }}
       >
-        <div
-          className={styles.nav_links}
-          onClick={() => {
-            setVerticalOpen(false);
-            handleSectionScroll("about");
-          }}
-        >
-          About
-        </div>
-        <div
-          className={styles.nav_links}
-          onClick={() => {
-            setVerticalOpen(false);
-            handleSectionScroll("experience");
-          }}
-        >
-          Experience
-        </div>
-        <div
-          className={styles.nav_links}
-          onClick={() => {
-            setVerticalOpen(false);
-            handleSectionScroll("skills");
-          }}
-        >
-          Skills
-        </div>
-        <div
-          className={styles.nav_links}
-          onClick={() => {
-            setVerticalOpen(false);
-            handleSectionScroll("projects");
-          }}
-        >
-          Projects
-        </div>
+        <NavLinks
+          setVerticalOpen={setVerticalOpen}
+          handleSectionScroll={handleSectionScroll}
+        />
       </div>
     </div>
   );

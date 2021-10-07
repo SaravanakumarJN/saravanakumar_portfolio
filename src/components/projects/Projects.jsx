@@ -86,7 +86,8 @@ const Projects = () => {
     //     title : ,
     //     image : ,
     //     about : ,
-    //     links :,
+    //     links : ,
+    //     badge :,
     // }
   ];
 

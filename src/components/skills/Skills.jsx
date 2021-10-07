@@ -11,46 +11,57 @@ import mongodb from "../../assets/mongodb.svg";
 import github from "../../assets/github-icon.svg";
 
 const Skills = () => {
+  let data = [
+    {
+      title: "HTML",
+      image: html,
+    },
+    {
+      title: "CSS",
+      image: css,
+    },
+    {
+      title: "Javascript",
+      image: javascript,
+    },
+    {
+      title: "React",
+      image: react,
+    },
+    {
+      title: "Redux",
+      image: redux,
+    },
+    {
+      title: "NodeJS",
+      image: nodejs,
+    },
+    {
+      title: "ExpressJS",
+      image: expressjs,
+    },
+    {
+      title: "MongoDB",
+      image: mongodb,
+    },
+    {
+      title: "Github",
+      image: github,
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.heading}>Tecchnology & Tools</div>
       <div className={styles.aligner}>
-        <div className={styles.listItem}>
-          <img src={html} alt='HTML' />
-          <div>HTML</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={css} alt='CSS' />
-          <div className={styles.title}>CSS</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={javascript} alt='Javascript' />
-          <div className={styles.title}>Javascript</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={react} alt='React' />
-          <div className={styles.title}>React</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={redux} alt='Redux' />
-          <div className={styles.title}>Redux</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={nodejs} alt='NodeJS' />
-          <div className={styles.title}>NodeJS</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={expressjs} alt='ExpressJS' />
-          <div className={styles.title}>ExpressJS</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={mongodb} alt='MongoDB' />
-          <div className={styles.title}>MongoDB</div>
-        </div>
-        <div className={styles.listItem}>
-          <img src={github} alt='Github' />
-          <div className={styles.title}>Github</div>
-        </div>
+        {data.map((item, i) => {
+          return (
+            <div key={i} className={styles.listItem}>
+              <img src={item.image} alt={item.title} />
+              <div className={styles.title}>{item.title}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
