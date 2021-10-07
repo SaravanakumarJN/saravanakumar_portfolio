@@ -11,7 +11,7 @@ const Proficiency = () => {
       <div className={styles.aligner}>
         <div className={styles.listItem}>
           <img src={frontend} alt='Frontend' />
-          <div>Frontend</div>
+          <div className={styles.title}>Frontend</div>
         </div>
         <div className={styles.listItem}>
           <img src={dsa} alt='Data Structures and Algorithms' />
