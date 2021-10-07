@@ -30,18 +30,13 @@ const Experience = () => {
       <div>
         <VerticalTimeline>
           <VerticalTimelineElement
-            className='vertical-timeline-element'
             contentStyle={style.contentStyle}
             date='April, 2021 - present'
             iconStyle={style.iconStyle}
             icon={<CgWorkAlt />}
           >
-            <h3 className='vertical-timeline-element-title'>
-              Instructional Associate | Developer
-            </h3>
-            <h4 className='vertical-timeline-element-subtitle'>
-              Masai School, Bangalore
-            </h4>
+            <h3>Instructional Associate | Developer</h3>
+            <h4>Masai School, Bangalore</h4>
             <p className={styles.content_p}>
               Roles and Responsibilities,
               <br />
@@ -56,18 +51,13 @@ const Experience = () => {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className='vertical-timeline-element'
             contentStyle={style.contentStyle}
             date='October, 2020 - April, 2021'
             iconStyle={style.iconStyle}
             icon={<FaBookReader />}
           >
-            <h3 className='vertical-timeline-element-title'>
-              Full Stack Web Development (Trainee)
-            </h3>
-            <h4 className='vertical-timeline-element-subtitle'>
-              Masai School, Bangalore
-            </h4>
+            <h3>Full Stack Web Development (Trainee)</h3>
+            <h4>Masai School, Bangalore</h4>
             <p className={styles.content_p}>
               Worked extensively on,
               <br />

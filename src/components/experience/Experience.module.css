@@ -14,10 +14,16 @@
 
 .container h3,
 .container h4 {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .content_p {
   font-size: 13px !important;
   font-weight: 300 !important;
+}
+
+@media only screen and (max-width: 630px) {
+  .heading {
+    font-size: 25px;
+  }
 }
