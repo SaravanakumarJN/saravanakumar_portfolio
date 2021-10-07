@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  min-width: 300px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  /* border:1px solid red; */
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #fafafa;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  /* border: 1px solid red; */
+}
+
+.aligner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.aligner > div {
+  margin: 10px;
+}
