@@ -52,7 +52,7 @@ const Skills = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.heading}>Technology & Tools</div>
+      <div className={styles.heading}>Skills & Interests</div>
       <div className={styles.aligner}>
         {data.map((item, i) => {
           return (

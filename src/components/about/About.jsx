@@ -7,7 +7,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 const About = () => {
   const details = {
     about:
-      "Passion-driven learner and a web developer with the ability to write clean, reusable, optimised code. Skilled and experienced at building and maintaining MERN based web applications. Currently working as Software Developer cum Instructional Associate at Masai School. Looking forward to joining a progressive and challenging work environment.",
+      "Passion-driven learner and a web developer with the ability to write clean, reusable, optimised code. Skilled and experienced at building and maintaining MERN based web applications. Looking forward to joining a progressive and challenging work environment.",
     email: "kumarjnsaravana@gmail.com",
     mobile: "8098806664",
     location: "Chennai, TamilNadu",
