@@ -21,7 +21,7 @@ const Header = () => {
 
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1LCu_MCYhcG5WTcRIIpPuKWfhgyjaiiAo/view?usp=sharing"
+      "https://drive.google.com/file/d/1udRIEFBUY6YfWihdJcGHXt0DFZXp2soA/view?usp=sharing"
     );
   };
 
