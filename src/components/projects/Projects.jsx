@@ -43,6 +43,7 @@ const Projects = () => {
         "https://github.com/masai-oss/Masai_Refresh",
         "https://refresh.masai.tech/login",
       ],
+      badge: "Live Project",
     },
     {
       title: "Practo Clone",

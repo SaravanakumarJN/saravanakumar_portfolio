@@ -19,7 +19,7 @@
 }
 
 .aligner {
-  max-width: 850px;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -27,11 +27,11 @@
 }
 
 .aligner > div {
-  margin: 10px 0;
+  margin: 10px 20px;
   padding: 20px;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 20px;
   border: 1px solid #f2f2f2;
   box-shadow: 5px 5px 8px #e6e6e6;
   text-align: center;
@@ -40,6 +40,7 @@
 .aligner > div:hover {
   transform: translateY(3px);
   transition: 300ms;
+  background-color: white;
 }
 
 .aligner > div > img {
@@ -54,5 +55,8 @@
 @media only screen and (max-width: 630px) {
   .heading {
     font-size: 25px;
+  }
+  .aligner > div {
+    margin: 10px 5px;
   }
 }

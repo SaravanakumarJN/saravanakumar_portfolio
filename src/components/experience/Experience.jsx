@@ -42,8 +42,8 @@ const Experience = () => {
               <br />
               - Building and maintaining internal applications
               <br />
-              - Clearing students conceptual doubts via slack and standups,
-              reviewing students projects.
+              - Clearing students conceptual doubts via standups and pair
+              programming, reviewing students projects.
               <br />
               - Reporting to the instructor and delivering lectures whenever
               required.

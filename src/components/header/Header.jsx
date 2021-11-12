@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import user from "../../assets/Saravana.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Header = () => {
