@@ -25,7 +25,7 @@ const ProjectCard = ({
       {badge ? (
         <>
           <div className={styles.card_badge_bottom}></div>
-          <div className={styles.card_badge_top}>Side project{badge}</div>
+          <div className={styles.card_badge_top}>{badge}</div>
         </>
       ) : null}
       <div className={styles.title}>{title}</div>
@@ -57,7 +57,7 @@ const ProjectCard = ({
           <span className={styles.card_button_icon}>
             <BiLinkExternal size='1.1em' />
           </span>
-          Demo
+          Live
         </button>
       </div>
     </div>

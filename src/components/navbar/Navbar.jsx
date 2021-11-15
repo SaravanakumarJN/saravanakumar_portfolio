@@ -41,6 +41,15 @@ const NavLinks = ({ setVerticalOpen, handleSectionScroll }) => {
       >
         Projects
       </div>
+      <div
+        className={styles.nav_links}
+        onClick={() => {
+          setVerticalOpen(false);
+          handleSectionScroll("contact");
+        }}
+      >
+        Contact
+      </div>
     </>
   );
 };
@@ -90,7 +99,7 @@ const Navbar = ({ handleSectionScroll }) => {
       <div
         className={styles.drop_down_container}
         style={{
-          height: verticalOpen ? "290px" : "0px",
+          height: verticalOpen ? "350px" : "0px",
         }}
       >
         <NavLinks

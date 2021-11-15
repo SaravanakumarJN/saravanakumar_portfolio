@@ -41,7 +41,6 @@
 }
 
 .gmail:hover {
-  text-decoration: underline;
   cursor: pointer;
   color: #51989d;
 }

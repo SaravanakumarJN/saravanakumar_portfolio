@@ -9,6 +9,8 @@ import nodejs from "../../assets/nodejs-icon.svg";
 import expressjs from "../../assets/express.svg";
 import mongodb from "../../assets/mongodb.svg";
 import github from "../../assets/github-icon.svg";
+import dsa from "../../assets/ds-removebg-preview.png";
+import mysql from "../../assets/mysql.svg";
 
 const Skills = () => {
   let data = [
@@ -45,8 +47,16 @@ const Skills = () => {
       image: mongodb,
     },
     {
+      title: "MySQL",
+      image: mysql,
+    },
+    {
       title: "Github",
       image: github,
+    },
+    {
+      title: "DS & ALgo",
+      image: dsa,
     },
   ];
 
